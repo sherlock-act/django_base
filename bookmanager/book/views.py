@@ -9,6 +9,8 @@ def index(request):
     @param request:
     @return:
     """
-
-    return HttpResponse('ok')
+    context={
+        "name": '点击有惊喜'
+    }
+    return render(request, 'book/index.html', context=context)
 
