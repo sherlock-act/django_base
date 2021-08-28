@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="529c86ea-ed2c-4b90-91e0-fef30b96e1a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/book/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/R-C.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookmanager/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookmanager/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,10 +38,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/book" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shanlei\JSYH\study_resp\django_base\bookmanager\static" />
       <recent name="C:\Users\shanlei\JSYH\study_resp\django_base\bookmanager\book" />
     </key>
   </component>
@@ -81,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1629901745115</updated>
       <workItem from="1629901746346" duration="1857000" />
-      <workItem from="1630130281249" duration="6042000" />
+      <workItem from="1630130281249" duration="6888000" />
     </task>
     <servers />
   </component>
