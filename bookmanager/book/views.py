@@ -2,7 +2,7 @@ import json
 
 from django.shortcuts import render
 from book.models import BookInfo, PeopleInfo
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 
 
 # Create your views here.
@@ -60,3 +60,59 @@ def json_data(request):
     print(data_dict)
 
     return HttpResponse("json ok")
+
+
+def return_json(request):
+    """
+    返回json数据
+    @param request:
+    @return:
+    """
+    data = {
+        'name': 'Gundom Seed',
+        'year': 2002
+    }
+
+    return JsonResponse(data)
+
+
+def set_cookies(request):
+    """
+    设置cookies
+    @param request:
+    @return:
+    """
+    print(request.META)
+    user_name = request.GET['name']
+    password = request.GET['pwd']
+
+    response = HttpResponse('set_cookies ok')
+    # 在response对象里面设置cookies,max_age指定cookie有效时间
+    response.set_cookie('name', user_name, max_age=60*60)
+    response.set_cookie('pwd', password)
+
+    # 返回响应的时候携带设置cookies信息
+    return response
+
+
+def get_cookies(request):
+    """
+    返回当前请求携带的cookies
+    @param request:
+    @return:
+    """
+    user_name = request.COOKIES['name']
+    password = request.COOKIES['pwd']
+
+    return HttpResponse('user_name:{},password:{}'.format(user_name, password))
+
+
+
+
+
+
+
+
+
+
+

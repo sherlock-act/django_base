@@ -38,5 +38,12 @@ urlpatterns = [
     path('regist/', views.regist),
 
     # 获取json数据
-    path('jsondata/', views.json_data)
+    path('jsondata/', views.json_data),
+
+    # 返回JSON数据
+    path('jsonresponsedata/', views.return_json),
+
+    # 设置cookies获取cookies
+    path('set_cookies/', views.set_cookies),
+    path('get_cookies/', views.get_cookies),
 ]
