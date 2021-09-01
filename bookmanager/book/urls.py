@@ -46,4 +46,8 @@ urlpatterns = [
     # 设置cookies获取cookies
     path('set_cookies/', views.set_cookies),
     path('get_cookies/', views.get_cookies),
+
+    # 设置session获取验证session
+    path('set_session/', views.set_session),
+    path('get_session/', views.get_session),
 ]

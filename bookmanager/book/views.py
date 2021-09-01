@@ -107,6 +107,32 @@ def get_cookies(request):
     return HttpResponse('user_name:{},password:{}'.format(user_name, password))
 
 
+def set_session(request):
+    """
+    设置session信息
+    @param request:
+    @return:
+    """
+    user_name = request.GET.get("name")
+    password = request.GET.get("pwd")
+
+    # 设置session
+    request.session["name"] = user_name
+    request.session["pwd"] = password
+
+    return HttpResponse("set_session ok")
+
+
+def get_session(request):
+    """
+    浏览器与服务器交互,比较session
+    @param request:
+    @return:
+    """
+    user_name = request.session.get('name')
+    password = request.session.get("pwd")
+
+    return HttpResponse("请求的用户为:{}, 请求用户的密码为:{}".format(user_name, password))
 
 
 
