@@ -1,6 +1,8 @@
 import json
 
 from django.shortcuts import render
+from django.views import View
+
 from book.models import BookInfo, PeopleInfo
 from django.http import HttpResponse, JsonResponse
 
@@ -122,7 +124,7 @@ def set_session(request):
 
     # session.clear 清除session的值
     request.session.clear()
-    
+
     # session.flush() 删除session 包括key
     request.session.flush()
 
@@ -142,6 +144,19 @@ def get_session(request):
     password = request.session.get("pwd")
 
     return HttpResponse("请求的用户为:{}, 请求用户的密码为:{}".format(user_name, password))
+
+
+
+# 类视图的使用
+# 定义一个类视图，继承View
+# 可以在一个链接里面同时处理get和post请求
+class LoginView(View):
+
+    def get(self, request):
+        return HttpResponse("get get get")
+
+    def post(self, request):
+        return HttpResponse("post post post")
 
 
 

@@ -5,6 +5,8 @@ from django.urls.converters import register_converter
 
 # 自定义转换器
 # 1.定义转换器
+
+
 class MobileConverter:
     regex = '1[3-9]\d{9}'
 
@@ -50,4 +52,7 @@ urlpatterns = [
     # 设置session获取验证session
     path('set_session/', views.set_session),
     path('get_session/', views.get_session),
+
+    # 使用类视图需要使用类名称.as_view()函数
+    path('login/', views.LoginView.as_view())
 ]
