@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="529c86ea-ed2c-4b90-91e0-fef30b96e1a4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/bookmanager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bookmanager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmanager/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookmanager/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookmanager02/.idea/bookmanager02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmanager02/.idea/bookmanager02.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookmanager02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmanager02/.idea/misc.xml" afterDir="false" />
     </list>
@@ -108,6 +105,7 @@
       <workItem from="1630428018066" duration="22000" />
       <workItem from="1630495074502" duration="5412000" />
       <workItem from="1630586727945" duration="824000" />
+      <workItem from="1630591732291" duration="327000" />
     </task>
     <servers />
   </component>

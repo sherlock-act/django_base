@@ -120,6 +120,15 @@ def set_session(request):
     request.session["name"] = user_name
     request.session["pwd"] = password
 
+    # session.clear 清除session的值
+    request.session.clear()
+    
+    # session.flush() 删除session 包括key
+    request.session.flush()
+
+    # session.set_expiry 设置session过期时间，单位是秒
+    request.session.set_expiry(30)
+
     return HttpResponse("set_session ok")
 
 
