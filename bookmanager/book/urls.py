@@ -50,4 +50,8 @@ urlpatterns = [
     # 设置session获取验证session
     path('set_session/', views.set_session),
     path('get_session/', views.get_session),
+
+    # 使用类视图,同时处理request与post请求
+    # 使用as_view函数,返回view函数对象
+    path('get_post/', views.get_post_request.as_view())
 ]

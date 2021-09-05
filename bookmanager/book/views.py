@@ -1,6 +1,8 @@
 import json
 
 from django.shortcuts import render
+from django.views import View
+
 from book.models import BookInfo, PeopleInfo
 from django.http import HttpResponse, JsonResponse
 
@@ -88,7 +90,7 @@ def set_cookies(request):
 
     response = HttpResponse('set_cookies ok')
     # 在response对象里面设置cookies,max_age指定cookie有效时间
-    response.set_cookie('name', user_name, max_age=60*60)
+    response.set_cookie('name', user_name, max_age=60 * 60)
     response.set_cookie('pwd', password)
 
     # 返回响应的时候携带设置cookies信息
@@ -135,10 +137,11 @@ def get_session(request):
     return HttpResponse("请求的用户为:{}, 请求用户的密码为:{}".format(user_name, password))
 
 
+class get_post_request(View):
+    """定义类视图,同时处理get和post请求"""
 
+    def get(self, request):
+        return HttpResponse("get get")
 
-
-
-
-
-
+    def post(self, request):
+        return HttpResponse("post post")
