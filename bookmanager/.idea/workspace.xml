@@ -3,8 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="529c86ea-ed2c-4b90-91e0-fef30b96e1a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/book/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/views.py" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/bookmanager/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookmanager/settings.py" afterDir="false" />
+=======
+>>>>>>> 6c3c61f8f963a26b8bbc52789f1fb8af9c22b105
       <change beforePath="$PROJECT_DIR$/../bookmanager02/.idea/bookmanager02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmanager02/.idea/bookmanager02.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookmanager02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmanager02/.idea/misc.xml" afterDir="false" />
+>>>>>>> 966ef57eb68529097609fbd9c33bb6256b292689
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,10 +117,21 @@
       <workItem from="1630414511687" duration="5001000" />
       <workItem from="1630427254014" duration="749000" />
       <workItem from="1630428018066" duration="22000" />
+<<<<<<< HEAD
+      <workItem from="1630495074502" duration="6818000" />
+      <workItem from="1630586503391" duration="525000" />
+      <workItem from="1630851730188" duration="9000" />
+      <workItem from="1630851750622" duration="441000" />
+=======
       <workItem from="1630495074502" duration="5412000" />
       <workItem from="1630586727945" duration="824000" />
+<<<<<<< HEAD
       <workItem from="1630591732291" duration="2123000" />
       <workItem from="1630853211081" duration="314000" />
+=======
+      <workItem from="1630591732291" duration="1434000" />
+>>>>>>> 966ef57eb68529097609fbd9c33bb6256b292689
+>>>>>>> 6c3c61f8f963a26b8bbc52789f1fb8af9c22b105
     </task>
     <servers />
   </component>

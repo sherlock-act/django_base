@@ -90,7 +90,7 @@ def set_cookies(request):
 
     response = HttpResponse('set_cookies ok')
     # 在response对象里面设置cookies,max_age指定cookie有效时间
-    response.set_cookie('name', user_name, max_age=60*60)
+    response.set_cookie('name', user_name, max_age=60 * 60)
     response.set_cookie('pwd', password)
 
     # 返回响应的时候携带设置cookies信息
@@ -145,8 +145,6 @@ def get_session(request):
 
     return HttpResponse("请求的用户为:{}, 请求用户的密码为:{}".format(user_name, password))
 
-
-
 # 类视图的使用
 # 定义一个类视图，继承View
 # 可以在一个链接里面同时处理get和post请求
@@ -157,12 +155,4 @@ class LoginView(View):
 
     def post(self, request):
         return HttpResponse("post post post")
-
-
-
-
-
-
-
-
 

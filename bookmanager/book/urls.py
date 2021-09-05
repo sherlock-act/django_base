@@ -53,6 +53,9 @@ urlpatterns = [
     path('set_session/', views.set_session),
     path('get_session/', views.get_session),
 
+    # 使用类视图,同时处理request与post请求
+    # 使用as_view函数,返回view函数对象
     # 使用类视图需要使用类名称.as_view()函数
     path('login/', views.LoginView.as_view())
+
 ]

@@ -132,6 +132,10 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+<<<<<<< HEAD
+
+# 使用redis保存session
+=======
 # 配置缓存使用redis，实现使用redis来存储session
 CACHES = {
     "default": {
@@ -145,3 +149,4 @@ CACHES = {
 
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
+>>>>>>> 966ef57eb68529097609fbd9c33bb6256b292689
