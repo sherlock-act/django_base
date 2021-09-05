@@ -5,6 +5,8 @@ from django.urls.converters import register_converter
 
 # 自定义转换器
 # 1.定义转换器
+
+
 class MobileConverter:
     regex = '1[3-9]\d{9}'
 
@@ -53,5 +55,7 @@ urlpatterns = [
 
     # 使用类视图,同时处理request与post请求
     # 使用as_view函数,返回view函数对象
-    path('get_post/', views.get_post_request.as_view())
+    # 使用类视图需要使用类名称.as_view()函数
+    path('login/', views.LoginView.as_view())
+
 ]

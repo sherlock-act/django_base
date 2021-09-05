@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-milg9+1f0to8n^fexv%&-7xf&u3-iss$rthl+$o^1ks7(zj88h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -132,5 +132,21 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+<<<<<<< HEAD
 
 # 使用redis保存session
+=======
+# 配置缓存使用redis，实现使用redis来存储session
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "default"
+>>>>>>> 966ef57eb68529097609fbd9c33bb6256b292689

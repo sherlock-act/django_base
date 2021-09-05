@@ -122,6 +122,15 @@ def set_session(request):
     request.session["name"] = user_name
     request.session["pwd"] = password
 
+    # session.clear 清除session的值
+    request.session.clear()
+
+    # session.flush() 删除session 包括key
+    request.session.flush()
+
+    # session.set_expiry 设置session过期时间，单位是秒
+    request.session.set_expiry(30)
+
     return HttpResponse("set_session ok")
 
 
@@ -136,12 +145,14 @@ def get_session(request):
 
     return HttpResponse("请求的用户为:{}, 请求用户的密码为:{}".format(user_name, password))
 
-
-class get_post_request(View):
-    """定义类视图,同时处理get和post请求"""
+# 类视图的使用
+# 定义一个类视图，继承View
+# 可以在一个链接里面同时处理get和post请求
+class LoginView(View):
 
     def get(self, request):
-        return HttpResponse("get get")
+        return HttpResponse("get get get")
 
     def post(self, request):
-        return HttpResponse("post post")
+        return HttpResponse("post post post")
+
